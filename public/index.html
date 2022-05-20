@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Web Assignment 0</title>
+    <meta name="description" content="First web assignment">
+    <meta name="author" content="Miguel Reyes">
+    <style>
+    body {
+      font-family: Segoe UI,serif;
+    }
+    h1 {
+      font-weight: bold;
+      font-family: Verdana,serif;
+      font-size: 36px;
+      text-align: center;
+    }
+    h2 {
+      font-family: Impact,serif;
+      text-align: center;
+    }
+    .inline-tags {
+        display: block;
+          margin: 0 auto;
+    }
+    #txtA{
+        resize: none;
+        font-size: 20px;
+    }
+    .colors{
+      margin: auto;
+      width: 6%;
+    }
+    </style>
+
+    <script>
+        function updateText()
+        {
+            var txtArea = document.getElementById("txtA");
+            var selectedValue = foods.options[foods.selectedIndex].value;
+            txtArea.value = selectedValue;
+        }
+
+        function updateColor(val)
+        {
+            document.getElementById("txtA").style.color = val;
+        }
+    </script>
+</head>
+<body>
+<h1>SWEN-344 Web Assignment 0</h1>
+<h2>Section 01</h2>
+
+<select name="foods" class="inline-tags" id="foods" onchange="updateText()">
+    <option value=""></option>
+    <option value="Protein">Protein</option>
+    <option value="Carbs">Carbs</option>
+    <option value="Fruits">Fruits</option>
+    <option value="Vegetables">Vegetables</option>
+    <option value="Sweets">Sweets</option>
+</select>
+
+<div class="colors">
+    <input type="radio" name="color" id="black" value="black" onclick="updateColor('black')">
+    <label for="black">Black</label><br>
+    <input type="radio" name="color" id="red" value="red" onclick="updateColor('red')">
+    <label for="red">Red</label><br>
+    <input type="radio" name="color" id="green" value="green" onclick="updateColor('green')">
+    <label for="green">Green</label><br>
+    <input type="radio" name="color" id="blue" value="blue" onclick="updateColor('blue')">
+    <label for="blue">Blue</label><br>
+    <input type="radio" name="color" id="purple" value="purple" onclick="updateColor('purple')">
+    <label for="purple">Purple</label><br>
+</div>
+
+<textarea id="txtA" class="inline-tags" name="txtA" rows="4" cols="40"> Food Type ...</textarea>
+</body>
+</html>

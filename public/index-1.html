@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Web Assignment 0</title>
+    <meta name="description" content="First web assignment">
+    <meta name="author" content="Miguel Reyes">
+    <link rel="stylesheet" href="nutrikit.css">
+    <script src="nutrikit.js"></script>
+</head>
+
+<body>    
+    <h1>NutriKit Food Planner</h1>
+    <h3>NutriKit allows you to select your groceries, and track your nutritional progress (good or bad)</h3>
+    <div class="flex_container-3-boxes">
+        <div>
+            <label for="foods" class="inline-tags">Categories</label><br>
+            <select name="foods" class="inline-tags" id="foods" onchange="displayMenuItems()">
+                <option value=""></option>
+                <option value="proteins">Protein</option>
+                <option value="fruits">Fruits</option>
+                <option value="vegetables">Vegetables</option>
+                <option value="dairy">Dairy</option>
+                <option value="grains">Grains</option>
+            </select>
+        </div>
+        <div>
+            <label for="items" class="inline-tags">Menu Items</label><br>
+            <select name="items" size="5" id="items" onfocus="clearSelected('selected-items')" onchange="changeSignOfButton('>>')">
+                <option value="default" disabled>Select a category</option>
+            </select>
+        </div>
+        <div>
+            <label for="" class="inline-tags"></label><br>
+            <button onclick="clickButton()" id="mover">>></button>
+        </div>
+        <div>
+            <label for="selected-items" class="inline-tags">Selected Items</label><br>
+            <select name="selected-items" size="10" id="selected-items" style="width:200px" onfocus="clearSelected('items')" onchange="changeSignOfButton('<<')">                
+            </select>
+            <p id="total-cal"></p>
+        </div>
+
+    </div>    
+</body>
+
+</html>

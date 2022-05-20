@@ -1,0 +1,50 @@
+body {
+  font-family: Segoe UI, serif;
+  background-color: chocolate;
+}
+
+button {
+  border: none;
+  padding: 4px 8px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #B2BEB5;
+}
+
+.colors {
+  width: 6%;
+}
+
+.flex_container-3-boxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.flex_container-3-boxes div {
+  margin-top: 25px;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 36px;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+option{
+  color: black;
+}
+
+#txtA {
+  resize: none;
+  font-size: 20px;
+}
