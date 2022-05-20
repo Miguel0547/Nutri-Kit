@@ -1,9 +1,8 @@
 from flask import Flask
-from flask_restful import Resource, Api
+from flask_restful import Api, Resource
 
-
-from api.swen_344_db_utils import *
 from api.example_api import *
+from api.swen_344_db_utils import *
 
 app = Flask(__name__) #create Flask instance
 
