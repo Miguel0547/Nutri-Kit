@@ -1,12 +1,6 @@
 # client-mar6466
 
-Auto-generated student project
-
-## Getting started
-
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
-
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+A web application using HTML, CSS, Bootstrap/Reactstrap and Javascript/React for managing food items and viewing/ tracking nutriional information. Food items will be in groups according to the nutritional pyramid, and you will build up a menu using one or more items from the various food groups. Also, assist people in grocery list planning while summarizing nutritional information (calories).
 
 ## Add your files
 
